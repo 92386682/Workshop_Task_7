@@ -1,14 +1,15 @@
-#WORKSHOP NUMBER 7
+# WORKSHOP NUMBER 7
 
 •	Build a simulation of a real or imagined entity or environment.
 •	Experiment with random walks and/or particle systems in your sketch.
 •	Make a new repository for your p5.js project on your GitHub account, publish your sketch as a webpage, and include a README file in your repository with a URL to the webpage along with documentation of your work.
 
+https://92386682.github.io/Workshop_Task_7/
 ##Initial plan (written before coding)
 Beginning by browsing peers repositories, I eventually found a workshop_2 task created by SiennaBienna that created “cheese-like” images by overlaying white circles onto 4 manually coloured squares. My idea to build from this, and respond to the workshop task, was to simulate the circles within each of the squares, never leaving the boundaries.
  
 
-##Process
+## Process
 Beginning by forking Sienna’s repository, and examining the code, I commented out the functions and my understanding of them. Then, working from the workshop tutorial, I introduced object constructors to take the place of cheeseArtist, manually placing the rectangles to take the place of the ones introduced by the function
 ![72](https://github.com/user-attachments/assets/57f165b0-20f3-470d-8acb-dba993abba2d)
 
@@ -24,5 +25,6 @@ Allowing for a very gradual "falling" effect if the code was viewed for long eno
 ![78](https://github.com/user-attachments/assets/9dc0ab06-d80c-4031-b79d-d5ea934a7e5c)
 
 Most of this task was a direct continuation of the workshop, and no major problems were encountered.
-##Possible development (beyond this task)
+
+## Possible development (beyond this task)
 More deeply developed movement dynamics, collision mechanics to “pop” bubbles that intersect via their x/y values.
