@@ -1,24 +1,27 @@
-# workshop_2
-Website(SWISS CHEESE RANDOMISER (ANDY WARHOL FOUR CHEESE BLEND): https://siennabienna.github.io/workshop_2/ 
+#WORKSHOP NUMBER 7
+•	Build a simulation of a real or imagined entity or environment.
+•	Experiment with random walks and/or particle systems in your sketch.
+•	Make a new repository for your p5.js project on your GitHub account, publish your sketch as a webpage, and include a README file in your repository with a URL to the webpage along with documentation of your work.
 
-### For the workshop tasks in workshop 3, I installed VScode. I then uploaded my Swiss Cheese Randomiser and had a go at changing some of the code on there. I had a plan to create my own function that I wanted to try with the cheese. The function would allow me to generate multiple slices of cheese at once using a randomiser for the holes.
+##Initial plan (written before coding)
+Beginning by browsing peers repositories, I eventually found a workshop_2 task created by SiennaBienna that created “cheese-like” images by overlaying white circles onto 4 manually coloured squares. My idea to build from this, and respond to the workshop task, was to simulate the circles within each of the squares, never leaving the boundaries.
+ 
 
-## I created the function 'CheeseArtist' which would allow me to draw cheese easily. I made the variables of this function SliceX (where the slice is on the x), SliceY (where the slice is on the Y), size, and holecount. 
+##Process
+Beginning by forking Sienna’s repository, and examining the code, I commented out the functions and my understanding of them. Then, working from the workshop tutorial, I introduced object constructors to take the place of cheeseArtist, manually placing the rectangles to take the place of the ones introduced by the function
+![72](https://github.com/user-attachments/assets/57f165b0-20f3-470d-8acb-dba993abba2d)
 
-![image](https://github.com/user-attachments/assets/52a8a96a-4068-44fa-963e-29ecf6f51f1d)
+Enabling portions of the forked code, and seeing if they could be integrated easily
+![73](https://github.com/user-attachments/assets/7640ef54-c087-4fcc-8810-e970c7e76351)
 
+Eventually, unfortunately, most of the code was rewritten, as it allowed for easier integration into the animation (movement) function and allowed for a more streamlined final product. Portions of the function were recycled, but it was fairly cut n paste-y.
+![74](https://github.com/user-attachments/assets/72c5fde3-d7c5-4462-84d8-665dc6e608f9)
 
-## I then kept the 'for' loop from my last cheese that would allow me to generate the holes. 
+Note that instead of defining each individual rectangle as x/y coordinates with the floating bubbles being confined to that space, I achieved a similar end result with a combination of noStroke() and matching the negative space RGB value to the bubbles themselves. The actual functionality of this is shown below, with noStroke() commented out. At the end, coming back to review, I changed the y variable slightly to
+`` this.y = this.y - random (1, -1.1);``
+Allowing for a very gradual "falling" effect if the code was viewed for long enough
+![78](https://github.com/user-attachments/assets/9dc0ab06-d80c-4031-b79d-d5ea934a7e5c)
 
-![image](https://github.com/user-attachments/assets/d00f7624-8692-4277-977d-3fc98fc0e413)
-
-
-## I then had to change the variables in random, so that the holes would generate on top of the slices of cheese. For this, I did  let x = random(sliceX, sliceX + size); let y = random(sliceY, sliceY + size);. This is so that it would find the top left corner of the cheese slice, and then add slice onto it so that it would find the full area of the cheese.
-
-![image](https://github.com/user-attachments/assets/bb04d6fc-dd62-4d3e-b4c1-795ae299351b)
-
-## Then, to actually use the funtion CheeseArtist that I set up, I created 4 pieces of cheese and entered the variables in for each one. I gave each one a new colour too.
-
-![image](https://github.com/user-attachments/assets/e7f6fffe-fbd4-413d-a57e-171670158f24)
-
-![image](https://github.com/user-attachments/assets/9feefcd3-944d-4299-8ca3-3552c44a678c)
+Most of this task was a direct continuation of the workshop, and no major problems were encountered.
+##Possible development (beyond this task)
+More deeply developed movement dynamics, collision mechanics to “pop” bubbles that intersect via their x/y values.
