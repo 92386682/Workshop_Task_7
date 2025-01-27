@@ -5,7 +5,8 @@
 •	Make a new repository for your p5.js project on your GitHub account, publish your sketch as a webpage, and include a README file in your repository with a URL to the webpage along with documentation of your work.
 
 https://92386682.github.io/Workshop_Task_7/
-##Initial plan (written before coding)
+
+## Initial plan (written before coding)
 Beginning by browsing peers repositories, I eventually found a workshop_2 task created by SiennaBienna that created “cheese-like” images by overlaying white circles onto 4 manually coloured squares. My idea to build from this, and respond to the workshop task, was to simulate the circles within each of the squares, never leaving the boundaries.
  
 
